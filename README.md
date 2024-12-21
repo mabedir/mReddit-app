@@ -15,39 +15,39 @@ This Reddit Client App is a lightweight application that allows users to browse 
 
 ---
 
-## Tech Stack
+## Technologies Used
 
-- **Frontend**: ReactJS, Redux, Redux Toolkit
-- **Styling**: CSS
-- **API**: Reddit JSON API
-- **Build Tool**: Vite
+- React
+- Redux Toolkit
+- Vite
+- Material-UI
+- Lodash
 
 ---
 
 ## Project Structure
 
 ```
-├── public
-├── src
-│   ├── components
+mreddit-app/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
 │   │   ├── Header.jsx
-│   │   ├── PostList.jsx
 │   │   ├── SubredditList.jsx
-│   ├── redux
-│   │   ├── features
-│   │   │   ├── postSlice.js
-│   │   └── store.js
+│   │   ├── PostList.jsx
+│   ├── redux/
+│   │   ├── features/
+│   │   │   ├── subRedditSlice.jsx
+│   │   │   ├── postSlice.jsx
+│   │   ├── store.js
 │   ├── App.jsx
-│   ├── index.css
 │   ├── main.jsx
+│   ├── styles.css
+├── .gitignore
+├── package.json
 ├── README.md
 ```
-
-### Key Files
-
-- **`PostList.jsx`**: Displays posts fetched from the selected subreddit.
-- **`postSlice.js`**: Redux slice to manage post-related state and API calls.
-- **`store.js`**: Configures the Redux store.
 
 ---
 
